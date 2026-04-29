@@ -4,11 +4,11 @@ import org.springframework.web.bind.annotation.*;
 import java.util.*;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/students")
 @CrossOrigin(origins = "http://localhost:3000")
 public class StudentController {
 
-    @GetMapping("/students")
+    @GetMapping
     public List<Map<String, Object>> getStudents() {
 
         List<Map<String, Object>> list = new ArrayList<>();
